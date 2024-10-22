@@ -1,0 +1,32 @@
+First thing to check 
+--------------------
+
+So, the cells data look very lengthy so we need to check of the maximum length of each column to determine the length for the columns which are VARCHAR
+
+=MAX(LEN(column_head:column_head))
+
+EX:
+
+=MAX(LEN(A:A))
+
+
+Title_Column	104
+director	208
+cast		771
+country		123
+date_added	19
+release_year	8
+rating		104
+duration	10
+listed_in	79
+description	250
+
+
+Second thing to check 
+---------------------
+We wanna know if there are null values in each column just follow the following:
+
+1- CTRL + a --> to select all the cells.
+2- Go to filter tab.
+3- then, each column header will be with a list of all the distinct values in the column.
+4- Scroll down to see if there is a blank value.
